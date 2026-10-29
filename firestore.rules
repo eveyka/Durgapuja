@@ -1,0 +1,51 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Helper function (if auth is required in production)
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+
+    // 1. Puja Events Collection (Durga Puja, Lakshmi Puja, Kali Puja, etc.)
+    match /puja_events/{eventId} {
+      allow read, write: if true;
+    }
+
+    // 2. Chanda Slips & Collections (Donor entries, amounts, paid/unpaid status)
+    match /chanda_slips/{slipId} {
+      allow read, write: if true;
+    }
+
+    // 3. Expenses / Kharcha Vouchers
+    match /expenses/{expenseId} {
+      allow read, write: if true;
+    }
+
+    // 4. Member Advances & Settlements
+    match /member_advances/{advanceId} {
+      allow read, write: if true;
+    }
+
+    // 5. In-Kind Donations (Bhog, Samagri, Groceries)
+    match /in_kind_donations/{donationId} {
+      allow read, write: if true;
+    }
+
+    // 6. Committee Settings & Category Budgets
+    match /puja_settings/{settingId} {
+      allow read, write: if true;
+    }
+
+    // 7. Chanda Books Collection
+    match /chanda_books/{bookId} {
+      allow read, write: if true;
+    }
+
+    // Default fallback: allow read and write
+    match /{document=**} {
+      allow read, write: if true;
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "53125151176",
+    "project_id": "durga-puja-82fe4",
+    "storage_bucket": "durga-puja-82fe4.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:53125151176:android:91d59e1c8ffc628c1ca8fd",
+        "android_client_info": {
+          "package_name": "com.durga.puja"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "53125151176-34sr4rlrufa7r20feov2jehvreth0gpa.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.durga.puja",
+            "certificate_hash": "45518234d3d02d391eb82f13a78276aa87a1ecf2"
+          }
+        },
+        {
+          "client_id": "53125151176-omhifh1mo9pqlc5duumerlse0d3p0mdp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.durga.puja",
+            "certificate_hash": "36ca2581362cce7378ed09bb923d513a34ff5634"
+          }
+        },
+        {
+          "client_id": "53125151176-u6v98il6fq8sf1l0u8krj9tmmv9lo5q5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqxamVzzpyWI4b5BrhmbH0sUyf8r6W-_U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "53125151176-u6v98il6fq8sf1l0u8krj9tmmv9lo5q5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
